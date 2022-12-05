@@ -8,7 +8,7 @@ pipeline{
   stages{
     stage('user check'){
       steps{
-        sh 'bash-x cat/etc/passwd'
+        echo"hello"
            }
     }
     stage('parallel-job'){
@@ -26,7 +26,7 @@ pipeline{
         }
         stage('sub-job3'){
             steps{
-                echo 'action3'
+                echo ' Do action3'
             }
         }
       }
